@@ -3,7 +3,7 @@ import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 import { ShieldCheck, ShieldAlert, Activity, ScanSearch, History, LockKeyhole, ArrowUpRight, CircleHelp } from 'lucide-react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API = import.meta.env.VITE_API_URL;
 const money = (n, currency='INR') => new Intl.NumberFormat('en-IN', {style:'currency', currency, maximumFractionDigits:0}).format(n);
 
 function App() {
