@@ -19,10 +19,17 @@ PAYPAL_CLIENT_SECRET = os.getenv('PAYPAL_CLIENT_SECRET', '')
 PAYPAL_BASE = 'https://api-m.paypal.com' if PAYPAL_MODE == 'live' else 'https://api-m.sandbox.paypal.com'
 
 app = FastAPI(title='PayShield AI API', version='1.1.0')
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=os.getenv('FRONTEND_ORIGINS', 'http://localhost:5173,http://127.0.0.1:5173').split(','),
-    allow_credentials=True, allow_methods=['*'], allow_headers=['*'],
+    allow_origins=[
+        "https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 class TransactionInput(BaseModel):
