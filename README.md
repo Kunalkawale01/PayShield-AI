@@ -1,4 +1,5 @@
 # PayShield AI
+
 ### Intelligent Payment Risk Analysis & Fraud Detection Platform
 
 PayShield AI is a web-based payment security platform designed to analyze transactions, identify suspicious payment activity, and help users understand potential fraud risks.
@@ -20,6 +21,7 @@ The platform combines a React frontend with a FastAPI backend and PayPal Sandbox
 The application integrates a React-based dashboard with a Python FastAPI backend, providing transaction analysis, risk visualization, transaction history, and PayPal Sandbox payment processing.
 
 The goal is to provide an integrated environment where transaction information, risk assessments, and payment workflows can be accessed through a single application.
+---
 
 ## Core Features
 
@@ -75,6 +77,7 @@ PayShield AI combines multiple application modules into one connected system.
 | API Communication | REST APIs | Connects frontend and backend |
 | API Documentation | Swagger UI | Documents and tests backend endpoints |
 | Cloud Hosting | Vercel + Render | Deploys frontend and backend independently |
+---
 
 ### Integrated Application Workflow
 
@@ -151,6 +154,7 @@ flowchart LR
 | Frontend Hosting | Vercel |
 | Backend Hosting | Render |
 | Version Control | Git, GitHub |
+---
 
 ## Project Structure
 
@@ -249,6 +253,7 @@ Open: `http://localhost:5173`
 | POST | `/api/paypal/capture-order/{order_id}` | Capture PayPal payment |
 
 **API Documentation:** [Open Swagger UI](https://payshield-ai-backend-7m14.onrender.com/docs)
+---
 
 ## Security & Best Practices
 
@@ -261,6 +266,7 @@ Open: `http://localhost:5173`
 - Apply appropriate rate limits and monitoring before public production use.
 
 > **Important:** PayShield AI is a demonstration project. Its current risk-analysis logic should not be treated as a certified financial fraud detection or payment authorization system.
+---
 
 ## Deployment
 
@@ -270,6 +276,7 @@ Open: `http://localhost:5173`
 | Backend | Render | Hosts FastAPI services |
 | Payment Testing | PayPal Sandbox | Simulates payment operations |
 | Source Control | GitHub | Project version control |
+---
 
 ## Future Enhancements
 
@@ -282,7 +289,24 @@ Open: `http://localhost:5173`
 - User authentication and role-based access.
 - Automated suspicious activity alerts.
 - Production-grade security and monitoring.
+---
 
 ## Project Objective
 
 To demonstrate how modern web development, transaction risk analysis, REST API integration, and payment gateway integration can work together to create an intelligent payment security platform.
+
+## Result
+
+<img width="1885" height="905" alt="Screenshot 2026-11-07 183929" src="https://github.com/user-attachments/assets/92ae7453-3e9e-42c0-8d32-4f3917c50bc0" />
+
+---
+<img width="1910" height="910" alt="Screenshot 2026-11-07 183619" src="https://github.com/user-attachments/assets/2392d208-e82a-4529-8259-3ca584ffd9f3" />
+
+---
+<img width="1917" height="1000" alt="Screenshot 2026-11-07 183655" src="https://github.com/user-attachments/assets/0060954b-2338-462e-b619-9b5cc01b3219" />
+
+---
+<img width="717" height="987" alt="Screenshot 2026-11-07 183725" src="https://github.com/user-attachments/assets/a8a4d00f-6e5a-422d-bb52-9f06c52b95d0" />
+
+---
+<img width="1916" height="967" alt="Screenshot 2026-11-07 183946" src="https://github.com/user-attachments/assets/adfce14a-a9f0-41c1-9f1b-aa8ddbe7e234" />
