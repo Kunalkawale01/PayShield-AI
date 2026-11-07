@@ -1,0 +1,19 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# React
+node_modules/
+dist/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
