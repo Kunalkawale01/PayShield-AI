@@ -4,7 +4,9 @@
 PayShield AI is a web-based payment security platform designed to analyze transactions, identify suspicious payment activity, and help users understand potential fraud risks.
 The platform combines a React frontend with a FastAPI backend and PayPal Sandbox integration to demonstrate a payment fraud detection workflow.
 
-## Live Demo
+## Website Link
+
+  PayShield AI : https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app/
 
 - Frontend: [https://pay-shield-7moq3ukwx-my-team-bb2a.vercel.app/](https://pay-shield-ai-tan.vercel.app)
 - Backend API: [https://payshield-ai-backend-7m14.onrender.com/](https://payshield-ai-backend-7m14.onrender.com)
@@ -170,9 +172,6 @@ PayShield-AI/
 └── .gitignore
 ```
 
-## Website Link
-  PayShield AI : https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app/
-  
 ## Installation & Setup
 
 ### Prerequisites
