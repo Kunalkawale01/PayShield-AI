@@ -1,162 +1,124 @@
-# PayShield AI
+# 🛡️ PayShield AI
+### Intelligent Payment Security & Fraud Risk Analysis Platform
 
-### Intelligent Payment Risk Analysis & Fraud Detection Platform
+<p align="center">
+  <strong>Smarter Payment Protection. Intelligent Risk Analysis. Safer Transactions.</strong>
+</p>
 
-PayShield AI is a web-based payment security platform designed to analyze transactions, identify suspicious payment activity, and help users understand potential fraud risks.
-The platform combines a React frontend with a FastAPI backend and PayPal Sandbox integration to demonstrate a payment fraud detection workflow.
+<p align="center">
+  <a href="https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app/">
+    <strong>🚀 Live Demo</strong>
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/Kunalkawale01/PayShield-AI">
+    <strong>📂 Source Code</strong>
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://payshield-ai-backend-7m14.onrender.com/docs">
+    <strong>📘 API Documentation</strong>
+  </a>
+</p>
 
-## Website Link
-
-  PayShield AI : https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app/
-
-- Frontend: [https://pay-shield-7moq3ukwx-my-team-bb2a.vercel.app/](https://pay-shield-ai-tan.vercel.app)
-- Backend API: [https://payshield-ai-backend-7m14.onrender.com/](https://payshield-ai-backend-7m14.onrender.com)
-- API Documentation: https://payshield-ai-backend-7m14.onrender.com/docs
 ---
 
-## Project Overview
+## 📌 Overview
 
-**PayShield AI** is a web-based payment security platform designed to demonstrate how transaction analysis and risk assessment can help identify potentially suspicious financial activities.
+**PayShield AI** is an intelligent payment security platform designed to analyze financial transactions, identify potentially suspicious activities, and provide transaction risk assessments.
 
-The application integrates a React-based dashboard with a Python FastAPI backend, providing transaction analysis, risk visualization, transaction history, and PayPal Sandbox payment processing.
+The platform combines a modern React dashboard with a Python FastAPI backend and PayPal Sandbox integration to demonstrate an end-to-end payment security workflow.
 
-The goal is to provide an integrated environment where transaction information, risk assessments, and payment workflows can be accessed through a single application.
----
+It aims to make payment risk information easier to understand through transaction analysis, interactive visualizations, and historical transaction insights.
 
-## Core Features
+## ✨ Key Features
 
-### 1. Intelligent Transaction Risk Analysis
-- Accept transaction information for analysis.
-- Evaluate transaction characteristics using the implemented risk-analysis logic.
-- Identify potentially suspicious transaction activity.
+### 🔍 1. Transaction Risk Analysis
+- Analyze transaction information.
+- Evaluate transaction characteristics.
+- Identify potentially suspicious payment activity.
 - Generate risk assessment results.
-- Present analysis results through the dashboard.
+- Display analysis results through an interactive dashboard.
 
-### 2. Interactive Security Dashboard
-- Centralized transaction analysis interface.
-- Visual representation of transaction risk information.
-- Interactive charts and data visualization.
-- Easy-to-understand transaction insights.
-- Integrated access to application functionality.
+### 📊 2. Interactive Security Dashboard
+- Centralized transaction monitoring interface.
+- Visual risk analytics and charts.
+- Transaction insights and summaries.
+- Easy-to-use interface for payment analysis.
 
-### 3. Transaction History Management
+### 📜 3. Transaction History
 - Retrieve previously analyzed transactions.
-- Review historical transaction information.
-- Access past risk assessment results.
-- Maintain visibility into analyzed transaction activity.
+- Review historical risk assessments.
+- Track transaction analysis results.
 
-### 4. PayPal Sandbox Payment Integration
-- Connect with PayPal Sandbox.
-- Create PayPal payment orders through the backend.
+### 💳 4. PayPal Sandbox Integration
+- PayPal Sandbox payment gateway integration.
+- Create payment orders through the backend.
 - Capture payment orders.
-- Retrieve PayPal configuration from the backend.
-- Test payment workflows without processing real funds.
+- Test payment workflows without using real funds.
 
-### 5. REST API Integration
-- React-to-FastAPI communication.
-- Dedicated transaction analysis endpoint.
-- Transaction history endpoint.
+### ⚙️ 5. REST API Integration
+- React frontend and FastAPI backend communication.
+- Dedicated transaction analysis endpoints.
+- Transaction history endpoints.
 - PayPal payment endpoints.
 - Backend health monitoring.
 - Interactive Swagger API documentation.
 
 ---
 
-## Integrated Features & Modules
-
-PayShield AI combines multiple application modules into one connected system.
-
-| Integrated Module | Technology / Service | Function |
-|---|---|---|
-| Frontend Dashboard | React + Vite | User interface and application interaction |
-| Backend Services | Python + FastAPI | Handles application requests and responses |
-| Risk Analysis Engine | Python | Evaluates transaction characteristics |
-| Transaction Analytics | Recharts | Visualizes available transaction and risk information |
-| Transaction History | FastAPI | Retrieves previously analyzed transactions |
-| PayPal Payment Gateway | PayPal Sandbox | Creates and captures test payment orders |
-| API Communication | REST APIs | Connects frontend and backend |
-| API Documentation | Swagger UI | Documents and tests backend endpoints |
-| Cloud Hosting | Vercel + Render | Deploys frontend and backend independently |
----
-
-### Integrated Application Workflow
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
-    A[User] --> B[PayShield AI Dashboard]
-    B --> C[React Frontend]
-    C --> D[FastAPI Backend]
+    A[User] --> B[React Dashboard]
+    B --> C[FastAPI Backend]
 
-    D --> E[Transaction Analysis]
-    D --> F[Transaction History]
-    D --> G[PayPal Integration]
+    C --> D[Transaction Risk Analysis]
+    C --> E[Transaction History]
+    C --> F[PayPal Sandbox]
 
-    E --> H[Risk Assessment]
-    F --> I[Historical Transaction Data]
-    G --> J[Create Payment Order]
-    J --> K[Capture Payment]
+    D --> G[Risk Assessment]
+    E --> H[Historical Data]
+    F --> I[Payment Processing]
 
-    H --> L[Dashboard Results]
-    I --> L
-    K --> L
+    G --> J[Dashboard Results]
+    H --> J
+    I --> J
 ```
 
-### End-to-End Transaction Analysis
+## 🔄 Application Workflow
 
-1. User enters transaction information.
-2. React frontend sends the information to the backend.
-3. FastAPI processes the analysis request.
+1. The user enters transaction information.
+2. The React frontend sends the data to the FastAPI backend.
+3. The backend processes the transaction analysis request.
 4. The risk-analysis logic evaluates transaction characteristics.
-5. The backend returns the assessment.
-6. The dashboard displays the result.
-
-### PayPal Payment Workflow
-
-1. The frontend requests PayPal configuration.
-2. The backend provides the required public configuration.
-3. The user initiates a Sandbox payment.
-4. The backend creates a PayPal order.
-5. The payment workflow proceeds through PayPal Sandbox.
-6. The backend captures the order when requested.
+5. The backend generates a risk assessment.
+6. The dashboard displays the results.
+7. Users can review transaction history and test PayPal Sandbox payments.
 
 ---
 
-## System Architecture
+## 🛠️ Technology Stack
 
-PayShield AI follows a modular frontend-backend architecture.
-
-```mermaid
-flowchart LR
-    A[User] --> B[Vercel - React Frontend]
-    B -->|REST API Requests| C[Render - FastAPI Backend]
-    C --> D[Risk Analysis Logic]
-    C --> E[Transaction History]
-    C --> F[PayPal Sandbox]
-    D --> C
-    E --> C
-    F --> C
-    C -->|JSON Responses| B
-```
-
-## Technology Stack
-
-| Layer | Technologies |
+| Component | Technology |
 |---|---|
-| Frontend | React.js, JavaScript |
+| Frontend | React.js |
 | Build Tool | Vite |
+| Programming Language | JavaScript |
 | Styling | CSS |
 | Data Visualization | Recharts |
 | Icons | Lucide React |
-| Backend | Python, FastAPI |
+| Backend | Python |
+| Backend Framework | FastAPI |
 | API Server | Uvicorn |
-| Payment Integration | PayPal Sandbox |
+| Payment Gateway | PayPal Sandbox |
 | API Communication | REST API, JSON |
-| Frontend Hosting | Vercel |
-| Backend Hosting | Render |
-| Version Control | Git, GitHub |
+| Frontend Deployment | Vercel |
+| Backend Deployment | Render |
+| Version Control | Git & GitHub |
+
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 PayShield-AI/
@@ -172,36 +134,64 @@ PayShield-AI/
 │   ├── package.json
 │   └── ...
 │
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
-## Installation & Setup
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run PayShield AI locally.
 
 ### Prerequisites
 
 - Python 3.11
 - Node.js and npm
 - Git
-- PayPal Developer account for Sandbox testing
+- PayPal Developer Account (for Sandbox testing)
 
-### 1. Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Kunalkawale01/PayShield-AI.git
+
 cd PayShield-AI
 ```
 
 ### 2. Backend Setup
 
+Navigate to the backend directory:
+
 ```bash
 cd backend
-py -3.11 -m venv .venv
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+**Windows:**
+```bash
 .venv\Scripts\activate
+```
+
+**macOS / Linux:**
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file inside the backend folder:
+Create a `.env` file inside the backend directory:
 
 ```env
 PAYPAL_MODE=sandbox
@@ -216,18 +206,27 @@ Start the backend:
 uvicorn main:app --reload
 ```
 
-Backend URL: `http://localhost:8000`
+Backend URL:
+
+```text
+http://localhost:8000
+```
 
 ### 3. Frontend Setup
 
-Open another terminal:
+Open a new terminal and navigate to the frontend directory:
 
 ```bash
 cd frontend
+```
+
+Install dependencies:
+
+```bash
 npm install
 ```
 
-Create `.env.local` inside the frontend folder:
+Create a `.env.local` file:
 
 ```env
 VITE_API_URL=http://localhost:8000
@@ -239,7 +238,13 @@ Start the frontend:
 npm run dev
 ```
 
-Open: `http://localhost:5173`
+Open the application:
+
+```text
+http://localhost:5173
+```
+
+---
 
 ## 🔌 API Reference
 
@@ -249,64 +254,70 @@ Open: `http://localhost:5173`
 | POST | `/api/analyze` | Analyze transaction risk |
 | GET | `/api/history` | Retrieve transaction history |
 | GET | `/api/paypal/config` | Retrieve PayPal configuration |
-| POST | `/api/paypal/create-order` | Create PayPal order |
+| POST | `/api/paypal/create-order` | Create PayPal payment order |
 | POST | `/api/paypal/capture-order/{order_id}` | Capture PayPal payment |
 
-**API Documentation:** [Open Swagger UI](https://payshield-ai-backend-7m14.onrender.com/docs)
+**Interactive API Documentation:**
+
+https://payshield-ai-backend-7m14.onrender.com/docs
+
 ---
 
-## Security & Best Practices
+## 🌐 Deployment
 
-- Keep PayPal Client Secret exclusively on the backend.
-- Store credentials in environment variables.
-- Never commit `.env` files to GitHub.
+PayShield AI uses cloud-based deployment for its frontend and backend.
+
+| Service | Platform |
+|---|---|
+| Frontend Application | Vercel |
+| Backend API | Render |
+| Payment Integration | PayPal Sandbox |
+| Source Code | GitHub |
+
+### Live Application
+
+🚀 https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app/
+
+---
+
+## 🔐 Security Considerations
+
+- Store sensitive credentials in environment variables.
+- Never expose PayPal Client Secrets in frontend code.
+- Never commit `.env` files to the repository.
 - Configure CORS for trusted frontend origins.
+- Validate transaction inputs on the backend.
 - Use PayPal Sandbox for payment testing.
-- Validate transaction input on the backend.
-- Apply appropriate rate limits and monitoring before public production use.
+- Implement rate limiting and monitoring before production deployment.
 
-> **Important:** PayShield AI is a demonstration project. Its current risk-analysis logic should not be treated as a certified financial fraud detection or payment authorization system.
+> **Disclaimer:** PayShield AI is a demonstration project. Its current risk-analysis logic is not a certified financial fraud detection system and should not be used as the sole basis for real financial decisions or payment authorization.
+
 ---
 
-## Deployment
-
-| Service | Platform | Purpose |
-|---|---|---|
-| Frontend | Vercel | Hosts React application |
-| Backend | Render | Hosts FastAPI services |
-| Payment Testing | PayPal Sandbox | Simulates payment operations |
-| Source Control | GitHub | Project version control |
----
-
-## Future Enhancements
+## 🔮 Future Enhancements
 
 - Machine-learning-based fraud classification.
 - Real-time transaction monitoring.
 - Advanced anomaly detection.
-- Explainable risk scoring.
+- Explainable AI-based risk assessment.
 - Device and behavioral analysis.
-- Advanced transaction reporting.
+- Automated suspicious transaction alerts.
+- Advanced analytics and reporting.
 - User authentication and role-based access.
-- Automated suspicious activity alerts.
 - Production-grade security and monitoring.
----
-
-## Project Objective
-
-To demonstrate how modern web development, transaction risk analysis, REST API integration, and payment gateway integration can work together to create an intelligent payment security platform.
-
-## Result
-
-<img width="1885" height="905" alt="Screenshot 2026-11-07 183929" src="https://github.com/user-attachments/assets/92ae7453-3e9e-42c0-8d32-4f3917c50bc0" />
 
 ---
-<img width="1910" height="910" alt="Screenshot 2026-11-07 183619" src="https://github.com/user-attachments/assets/2392d208-e82a-4529-8259-3ca584ffd9f3" />
+
+## 🎯 Project Objective
+
+The objective of PayShield AI is to demonstrate how modern web technologies, transaction risk analysis, API integration, and payment gateway services can work together to build an intelligent payment security platform.
+
+## 👨‍💻 Contributors
+
+Developed as a technology project focused on payment security, transaction analysis, and fintech innovation.
 
 ---
-<img width="1917" height="1000" alt="Screenshot 2026-11-07 183655" src="https://github.com/user-attachments/assets/0060954b-2338-462e-b619-9b5cc01b3219" />
 
----
-<img width="717" height="987" alt="Screenshot 2026-11-07 183725" src="https://github.com/user-attachments/assets/a8a4d00f-6e5a-422d-bb52-9f06c52b95d0" />
-
----
-<img width="1916" height="967" alt="Screenshot 2026-11-07 183946" src="https://github.com/user-attachments/assets/adfce14a-a9f0-41c1-9f1b-aa8ddbe7e234" />
+<p align="center">
+  <strong>🛡️ PayShield AI — Building a Safer Digital Payment Experience.</strong>
+</p>
