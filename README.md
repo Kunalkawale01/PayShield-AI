@@ -1,4 +1,5 @@
-# 🛡️ PayShield AI
+<img width="2172" height="724" alt="image" src="https://github.com/user-attachments/assets/9a3840ef-ac8f-437c-9977-eb8d919845f0" />
+
 ### Intelligent Payment Security & Fraud Risk Analysis Platform
 
 <p align="center">
