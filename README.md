@@ -277,7 +277,7 @@ PayShield AI uses cloud-based deployment for its frontend and backend.
 
 ### Live Application
 
-🚀[ https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app/](https://pay-shield-ai-tan.vercel.app/)
+🚀https://pay-shield-ai-tan.vercel.app/ 
 
 ---
 
