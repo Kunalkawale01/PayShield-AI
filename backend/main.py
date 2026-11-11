@@ -22,11 +22,12 @@ app = FastAPI(title='PayShield AI API', version='1.1.0')
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app",
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+   allow_origins=[
+    "https://pay-shield-ai-tan.vercel.app",
+    "https://pay-shield-2xpbth7te-my-team-bb2a.vercel.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
